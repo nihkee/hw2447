@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Delete</title> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head> 
+    <body class = "deleteBody">
+        <h1>Delete Player</h1>
+        <!-- form to input player name for deletion, method is post to write data -->
+        <form method="POST">
+            <input type="text" name="name" placeholder="Enter Player Name" required><br/> 
+            <input type = "submit" value = "delete"/><br/> 
+        </form>
+
+        <!-- return back to home -->
+        <button type="button"><a href="{{ url_for('index') }}">Home</a></button>  
+    </body> 
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Player Table</title> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head> 
+    <body class = "viewBody"> 
+      <h1>List of Players</h1>
+        <table style="width:100%"> 
+          <!--first row is headers, creates 3 columns -->
+            <tr> 
+              <th>Name</th> 
+              <th>ID</th> 
+              <th>Points</th> 
+            </tr> 
+            <!-- render each column in each row -->
+            {%for player in data%} 
+               <tr> 
+                 <td>{{player[0]}}</td> 
+                 <td>{{player[1]}}</td> 
+                 <td>{{player[2]}}</td> 
+                </tr> 
+            {%endfor%} 
+          </table> 
+          
+          <!-- return back to home -->
+        <button type="button"><a href="{{ url_for('index') }}">Home</a></button>         
+    </body> 
+</html> 

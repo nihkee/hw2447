@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Homepage</title> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head> 
+    <body class = "indexBody"> 
+        <h1>Welcome to the Player Database</h1> 
+        <!-- creates buttons for each option -->
+        <button class="btn" id="createButton">Create New User</button><br/> 
+        <button class="btn" id="viewButton">View All Players</button><br/> 
+        <button class="btn" id="searchButton">Search Player</button><br/> 
+        <button class="btn" id="updateButton">Update Player</button><br/> 
+        <button class="btn" id="deleteButton">Delete Player</button><brs/> 
+
+        <script>
+            //added JS, when user clicks on each button, browser gets redirected to flask endpoint
+            document.getElementById("createButton").addEventListener("click", function() {
+                window.location.href = "{{ url_for('create') }}";
+            });
+
+            document.getElementById("viewButton").addEventListener("click", function() {
+                window.location.href = "{{ url_for('view') }}";
+            });
+
+            document.getElementById("searchButton").addEventListener("click", function() {
+                window.location.href = "{{ url_for('search') }}";
+            });
+
+            document.getElementById("updateButton").addEventListener("click", function() {
+                window.location.href = "{{ url_for('update') }}";
+            });
+
+            document.getElementById("deleteButton").addEventListener("click", function() {
+                window.location.href = "{{ url_for('delete') }}";
+            });
+
+        </script>
+    </body> 
+</html>

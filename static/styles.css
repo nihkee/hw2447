@@ -1,0 +1,106 @@
+/* customize backgrounds */
+.indexBody {
+    background-image: url("/static/imgs/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.createBody {
+    background-image: url("/static/imgs/img2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deleteBody {
+    background-image: url("/static/imgs/img3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searchBody {
+    background-image: url("/static/imgs/img4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.updateBody {
+    background-image: url("/static/imgs/img5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.viewBody {
+    background-image: url("/static/imgs/img7.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* customize body */
+
+body {
+    text-align: center;
+    color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* customize inputs */
+
+input {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* customize labels */
+label {
+    font-weight: bold;
+}
+
+/* customize table */
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+tr {
+    background-color: #f3f3f3;
+}
+  
+th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
+
+/* customize button */
+
+button {
+    border-radius: 4px;
+    background-color: darkslategrey;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #e43e35;
+}
+
+button:hover {opacity: 1}
+
+a:link, a:visited {
+    color: white;
+}
